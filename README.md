@@ -1,6 +1,6 @@
 # Weather Dashboard
 
-This weather dashboard uses an API call to search cities and their weather information. 
+This weather dashboard uses an API call to search cities and their weather information. It displays temperature, wind gusts, and humidity. It also saves the history of cities searched underneath the search bar, and you can clear the search history as well.
 
 ## Screenshots
 
@@ -17,3 +17,4 @@ This weather dashboard uses an API call to search cities and their weather infor
 - https://openweathermap.org/current
 
 ## Deployed Application
+
