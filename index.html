@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="justify-content-center">
+        <h1 class="p-3 mb-2 bg-primary text-white">Weather Dashboard</h1>
+    </header>
+    <main>
+        <div class="row">
+            <div id="search-section" class="search col-2">
+                <h2>Search for a City:</h2>
+                <input id="search-city" class="form-control form-control-sm" type="text" placeholder="Enter City" aria-label="form-control-sm example">
+                <div class="d-grid gap-2 border-search">
+                    <button class="btn-space btn btn-primary" type="button" onclick="getWeather()">Search</button>
+                    <button class="city-space btn btn-primary" type="button" onclick="clearStorage()">Clear Search History</button>
+                </div>
+
+                <div >
+                    <ul id="ulist" class='saved-spacing d-grid'>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <div id="weather-display" class="col space-between">
+                <div class="row border border-dark right-side">
+                    <h2 id="current-header">City</h2>
+                    <p>Temp: <span id="current-temp"></span></p>
+                    <p>Wind: <span id="current-wind"></span></p>
+                    <p>Humidity: <span id="current-humid"></span></p>
+                    <P>UV Index: <span id="current-uv"></span></P>
+                </div>
+
+                <h3 class="buffer">5-Day Forcast:</h3>
+
+                <div class="row right-side">
+
+                    <!--Day one-->
+                    <div class="col card bg-secondary text-white five-space">
+                        <div class="card-body">
+                            <h5 id="dayone-date" class="card-title"></h5>
+                            <p id="dayone-img" class="card-text"></p>
+                            <p class="card-text">Temp: <span id ="dayone-temp"></span></p>
+                            <p class="card-text">Wind: <span id ="dayone-wind"></span></p>
+                            <p class="card-text">Humidity: <span id ="dayone-humid"></span></p>
+                        </div>
+                    </div>
+
+                    <!--Day two-->
+                    <div class="col card bg-secondary text-white five-space">
+                        <div class="card-body">
+                            <h5 id="daytwo-date" class="card-title"></h5>
+                            <p id="daytwo-img" class="card-text"></p>
+                            <p class="card-text">Temp: <span id ="daytwo-temp"></span></p>
+                            <p class="card-text">Wind: <span id ="daytwo-wind"></span></p>
+                            <p class="card-text">Humidity: <span id ="daytwo-humid"></span></p>
+                        </div>
+                    </div>
+
+                    <!--Day three-->
+                    <div class="col card bg-secondary text-white five-space">
+                        <div class="card-body">
+                            <h5 id="daythree-date" class="card-title"></h5>
+                            <p id="daythree-img" class="card-text"></p>
+                            <p class="card-text">Temp: <span id ="daythree-temp"></span></p>
+                            <p class="card-text">Wind: <span id ="daythree-wind"></span></p>
+                            <p class="card-text">Humidity: <span id ="daythree-humid"></span></p>
+                        </div>
+                    </div>
+
+                    <!--Day four-->
+                    <div class="col card bg-secondary text-white five-space">
+                        <div class="card-body">
+                            <h5 id="dayfour-date" class="card-title"></h5>
+                            <p id="dayfour-img" class="card-text"></p>
+                            <p class="card-text">Temp: <span id ="dayfour-temp"></span></p>
+                            <p class="card-text">Wind: <span id ="dayfour-wind"></span></p>
+                            <p class="card-text">Humidity: <span id ="dayfour-humid"></span></p>
+                        </div>
+                    </div>
+
+                    <!--Day five-->
+                    <div class="col card bg-secondary text-white">
+                        <div class="card-body">
+                            <h5 id="dayfive-date" class="card-title"></h5>
+                            <p id="dayfive-img" class="card-text"></p>
+                            <p class="card-text">Temp: <span id ="dayfive-temp"></span></p>
+                            <p class="card-text">Wind: <span id ="dayfive-wind"></span></p>
+                            <p class="card-text">Humidity: <span id ="dayfive-humid"></span></p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</body>
+</html>

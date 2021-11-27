@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+.search {
+    margin-left: 1%;
+}
+
+.border-search {
+    border-bottom:black solid 2px;
+}
+
+.btn-space {
+    margin: 15px 0;
+}
+
+.space-between {
+    margin-left: 15px;
+}
+.saved-spacing {
+    margin-top: 15px;
+}
+
+.buffer {
+    margin-top: 15px;
+}
+
+.right-side {
+    margin-right: 10px;
+}
+
+.five-space {
+    margin-right: 6%;
+}
+
+ul {
+    padding: 0;
+}
+
+.city-space {
+    margin-bottom:15px;
+}
