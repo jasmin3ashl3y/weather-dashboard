@@ -4,9 +4,9 @@ This weather dashboard uses an API call to search cities and their weather infor
 
 ## Screenshots
 
-![Search city](assets/Screenshots/screenshot1.PNG)
+![Search city](/assets/screenshots/screenshot1.PNG)
 ----------------------------------------
-![Clear search history](assets/Screenshots/screenshot2.PNG)
+![Clear search history](/assets/screenshots/screenshot2.PNG)
 ----------------------------------------
 
 ## Technologies Used
@@ -18,3 +18,4 @@ This weather dashboard uses an API call to search cities and their weather infor
 
 ## Deployed Application
 
+https://jasmin3ashl3y.github.io/weather-dashboard/
